@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <h1 class="active-item"><span>REVIEW PHIM .NET</span></h1>
+        </div>
+        <ul class="main-menu">
+            <li><a href="../index.html">Trang Chủ</a></li>
+            <li><a href="">Phim Mới</a></li>
+            <li>
+                <a href="">Thể Loại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Phim Hành Động</a></li>
+                    <li><a href="">Phim Tình Cảm</a></li>
+                    <li><a href="">Phim Võ Thuật</a></li>
+                    <li><a href="">Phim Viễn Tưởng</a></li>
+                </ul>
+            </li>
+            <li><a href="">Quốc Gia</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Tìm Kiếm" class="search-video">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- navbar menu  -->
+        <!-- search mobile -->
+        <input type="checkbox"name="" class="nav_search-text" id="search-input">
+        <label for="search-input" class="nav-search-mobile">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <label for="search-input" class="search-mobile">
+            <input type="text" placeholder="Tìm Kiếm" class="search-video-mobile">
+        </label>
+        <!-- end search mobile -->
+        <label for="nav-mobile-input" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox"name="" class="nav_input" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="nav-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="nav-mobile-input" class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="main-menu-mobile">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="">Phim Mới</a></li>
+                <li>
+                    <a href="">Thể Loại</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Phim Hành Động</a></li>
+                        <li><a href="">Phim Tình Cảm</a></li>
+                        <li><a href="">Phim Võ Thuật</a></li>
+                        <li><a href="">Phim Viễn Tưởng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Quốc Gia</a></li>
+            </ul>
+            <input type="checkbox"name="" class="discoloration-check" id="discoloration-input">
+        <label for="discoloration-input" class="discoloration">
+        </nav>
+    </nav>
+    <Section class="movie-video">
+        <div class="heading-movie">
+            <h1 class="active-item"><span>REVIEW PHIM .NET / PHIM HÀI</span></h1>
+        </div>
+        <video controls>
+            <source src="../video/bid mouse.mp4">
+          </video>
+          <!-- text -->
+          <div class="movie-text">
+            <div class="movie_text-content">
+               <h2>Nội dung phim:</h2>
+           <p>Xem phim Big Mouth Tập 1, Big Mouse (2022) Vietsub 
+            Thuyết Minh Full HD. Phim với sự góp mặt của hai diễn 
+            viên chính Lee Jong Suk và YoonA (SNSD). Được viết kịch 
+            bản bởi Kim Ga Ram và đạo diễn bởi Oh Chung Hwan, Big Mouth 
+            kể câu chuyện về một chàng luật sư kém tài không may bị cuốn 
+            vào một vụ án giết người. Để sống sót và bảo vệ gia đình, anh 
+            bắt buộc phải đào sâu khám phá âm mưu lớn của tầng lớp thượng lưu.</p>
+            </div>
+          </div>
+    </Section>
+    <script>
+        var checkbox__toggle = document.getElementById('discoloration-input');
+       checkbox__toggle.addEventListener('change',function(){
+           document.body.classList.toggle('color');
+       });
+   </script>
+</body>
+</html>

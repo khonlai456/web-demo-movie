@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <h1 class="active-item"><span>REVIEW PHIM .NET</span></h1>
+        </div>
+        <ul class="main-menu">
+            <li><a href="../index.html">Trang Chủ</a></li>
+            <li><a href="">Phim Mới</a></li>
+            <li>
+                <a href="">Thể Loại</a>
+                <ul class="sub-menu">
+                    <li><a href="">Phim Hành Động</a></li>
+                    <li><a href="">Phim Tình Cảm</a></li>
+                    <li><a href="">Phim Võ Thuật</a></li>
+                    <li><a href="">Phim Viễn Tưởng</a></li>
+                </ul>
+            </li>
+            <li><a href="">Quốc Gia</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Tìm Kiếm" class="search-video">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <!-- navbar menu  -->
+        <!-- search mobile -->
+        <input type="checkbox"name="" class="nav_search-text" id="search-input">
+        <label for="search-input" class="nav-search-mobile">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <label for="search-input" class="search-mobile">
+            <input type="text" placeholder="Tìm Kiếm" class="search-video-mobile">
+        </label>
+        <!-- end search mobile -->
+        <label for="nav-mobile-input" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox"name="" class="nav_input" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="nav-overlay"></label>
+
+        <nav class="navbar-mobile">
+            <label for="nav-mobile-input" class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="main-menu-mobile">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="">Phim Mới</a></li>
+                <li>
+                    <a href="">Thể Loại</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Phim Hành Động</a></li>
+                        <li><a href="">Phim Tình Cảm</a></li>
+                        <li><a href="">Phim Võ Thuật</a></li>
+                        <li><a href="">Phim Viễn Tưởng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Quốc Gia</a></li>
+            </ul>
+            <input type="checkbox"name="" class="discoloration-check" id="discoloration-input">
+        <label for="discoloration-input" class="discoloration">
+        </nav>
+    </nav>
+    <Section class="movie-video">
+        <div class="heading-movie">
+            <h1 class="active-item"><span>REVIEW PHIM .NET / PHIM HÀI</span></h1>
+        </div>
+        <video controls>
+            <source src="../video/Breakout brothers.mp4">
+          </video>
+          <!-- text -->
+          <div class="movie-text">
+            <div class="movie_text-content">
+               <h2>Nội dung phim:</h2>
+           <p>Hành Động Vượt Ngục là phim hành động do Team 
+            TVHAY thực hiện thuyết minh Kể về nhà tù được lãnh
+             đạo bởi hai tù nhân quyền lực, đó là thủ lĩnh bộ ba 
+             Roller ( Patrick Tam ) và tù nhân chung thân Scar (Justin Cheung).
+              Cuộc sống ổn định trong nhà tù thay đổi với sự xuất hiện của người 
+              tù bị buộc tội sai Mak Kin-tin (Adam Pak). Đầu tiên, Kin-tin liên tục
+               bị Scar đe dọa, khiến Kin-tin từ bỏ yêu cầu kháng cáo và sau đó bị 
+               các tù nhân khác bắt nạt khi họ phát hiện ra anh ta có quan hệ với
+                con gái của Roller. Để bảo vệ mạng sống của mình, Kin-tin nhận lời
+                 đề nghị của bạn cùng phòng, Ho-ching ( Louis Cheung ), và họ cùng 
+                 nhau lập kế hoạch vượt ngục chính xác. Để tránh sự giám sát nghiêm 
+                 ngặt của Warden Tang ( Kenny Wong ), Ho-ching thuyết phục Roller giúp 
+                 họ nhưng Scar cũng phát hiện ra kế hoạch và miễn cưỡng tham gia. Kết quả là,
+                  bốn tù nhân này đã gác lại sự ganh đua trong quá khứ và cùng nhau vượt ngục.</p>
+            </div>
+          </div>
+    </Section>
+    <script>
+        var checkbox__toggle = document.getElementById('discoloration-input');
+       checkbox__toggle.addEventListener('change',function(){
+           document.body.classList.toggle('color');
+       });
+   </script>
+</body>
+</html>
